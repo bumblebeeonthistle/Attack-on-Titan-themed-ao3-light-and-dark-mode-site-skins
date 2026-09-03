@@ -1,0 +1,822 @@
+/* Hide greeting icon */
+#greeting img.icon {
+  display: none;
+}
+
+/* Style links in main content */
+#main a {
+  color: #ffeccf;
+}
+
+/* Default colour for required etc.*/
+.required .autocomplete, 
+.autocomplete .notice, 
+.post .required .warnings, 
+dd.required {
+	color: #ffeccf;
+}
+
+/* Remove shadow and add border to comment icons */
+.comment div.icon {
+  box-shadow: none;
+  border: 2px solid #c8cacb;
+}
+
+/* Global font and text color */
+body {
+  font: Georgia, serif;
+  color: #ffeccf;
+}
+
+/* Background */
+#outer,
+#header .menu,
+ol.index.group,
+.listbox .index {
+  background: #243b2b;
+}
+
+/* Hide default AO3 logo and superscript */
+#header .logo,
+#header .heading sup {
+  display: none;
+}
+
+/* Hide default AO3 heading text */
+#header h1.heading span {
+  display: none;
+}
+
+/* Replace AO3 header title with custom image: https://www.textstudio.com/logo/attack-on-titan-font-2538 */
+#header h1.heading a::before {
+  display: inline-block;
+  width: 284px;
+  height: 80px;
+  content: " ";
+  background-image: url("https://i.ibb.co/XxV6kD4n/Archive-of-Our-Own-30-07-2026.png");
+  background-size: 284px 80px;
+}
+
+/*Header image*/
+#header {
+  background-image: url("https://wallpaperaccess.com/full/5847806.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #243b2b;
+  border-bottom: 5px solid #c8cacb;
+}
+
+/* Adjust header height */
+#header .heading {
+  height: 13em;
+}
+
+/* Remove background and shadow from primary nav */
+#header .primary {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Resize greeting menu */
+#greeting .menu {
+  width: 12em !important;
+}
+
+/* Resize header menu */
+#header .menu {
+  width: 20em;
+}
+
+/* Menu navigation text */
+#header .menu,
+#header a.dropdown-toggle,
+#greeting .user > li:nth-of-type(3) a,
+#footer .heading,
+#footer a,
+#footer button,
+#footer li {
+  color: #c8cacb !important;
+  font-variant: Georgia, serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px black
+}
+
+/* Menu link styles */
+#header .menu li a {
+  color: #c8cacb !important;
+  border: #c8cacb !important;
+  font-weight: normal !important;
+}
+
+/* Borders between menu items */
+#header .menu li {
+  border: 1px solid #c8cacb;
+}
+
+/* Hover effect for dropdown/menu items */
+#header a.dropdown-toggle:hover,
+#greeting .user > li:nth-of-type(3) a:hover {
+  background: rgba(36, 59, 43, 1);
+  color: #c8cacb !important;
+}
+
+#header a.dropdown-toggle:hover {
+  Color: #ffeccf;
+  background: #243b2b
+}
+#header .dropdown .menu a,
+#header .dropdown .menu a:hover, 
+#header .dropdown .menu a:focus {
+        background: #403535;
+    }
+
+#header .actions a:hover,
+#header .actions a:focus,
+#header .dropdown:hover a, 
+#header .open a {
+        background: #243b2b;
+}
+
+/* Hover effect for dropdown/menu items 2*/
+#header .primary .open a{
+  background: #243b2b !important;
+  color: #c8cacb !important;
+}
+
+/* Add decorative image to news blockquote = bird*/
+.splash .news blockquote p:first-child {
+  padding-left: 105px;
+  background: url("https://i.ibb.co/3Y8TBnCc/bird-2.png");
+  background-size: 100px 80px;
+  background-position-x: left;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Add decorative icon to social module = founder ymir */
+.social.module p {
+  padding-left: 83px;
+  background: url("https://i.ibb.co/3YTQ0mYj/founder-ymir.jpg");
+  background-size: 68px 80px;
+  background-position-x: left;
+  background-position-y: top;
+  background-repeat: no-repeat;
+}
+
+/* Comment author line background */
+.comment h4.byline {
+    background: url("https://i.ibb.co/QF4qB4Gt/aot-collage-dark-banner.png"); /* Decorative background */
+  background-size: 30%; /* Smaller repeated image */
+  border: 2px solid #c8cacb; /* border */
+  box-shadow: none; /* Remove AO3 default shadow */
+  color: #ffeccf; /* Text color */
+}
+
+/* Add decorative image to comment content =survey corps symbol */
+.comment .userstuff {
+  padding-right: 67px;
+  padding-bottom: 50px;
+  background: url("https://static.wikia.nocookie.net/animal-jam-clans-1/images/2/20/Survey-corpse.png");
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 50px 70px;
+}
+
+li.comment.unread {
+	border: 2px dashed transparent;
+	border-color: #c8cacb;
+}
+
+
+/* Comment border */
+li.comment {
+  background: transparent;
+  border: 2px solid transparent;
+  border-color: #c8cacb
+}
+
+/* Alternate thread background color */
+.thread .even {
+  background: #403535;
+}
+
+/* Notices and alerts */
+.notice,
+.comment_notice,
+.kudos_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.kudos_error,
+.alert.flash,
+.LV_invalid {
+  border: 1px solid transparent;
+  border-color: #ffeccf;
+  background: rgba(64, 53, 53, 1);
+  box-shadow: none;
+  color: #ffeccf;
+}
+
+/* Button styling */
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+.actions button,
+.actions input,
+input[type="submit"],
+button,
+.actions label {
+  background: linear-gradient(180deg,rgba(52, 75, 123, 1) 0%, rgba(140, 164, 180, 1) 100%);
+  border-style: outset;
+  border-width: 2px;
+  border-color: black;
+  color: #ffeccf;
+}
+
+/* Button hover/focus effects */
+.actions a:hover,
+.actions button:hover,
+.actions input:hover,
+.actions a:focus,
+.actions button:focus,
+.actions input:focus,
+label.action:hover,
+.action:hover,
+.action:focus {
+  background: rgba(36, 59, 43, 0.5);
+  box-shadow: none;
+  color: #ffeccf;
+  border-color: #c8cacb !important;
+}
+
+/* Styles the active button or active page number in menus and navigation */
+.actions a.current, .current, a.current {
+  background: #243b2b !important;
+  color: #ffeccf !important;
+  border-color: #c8cacb !important;
+}
+
+/* Dashboard drop-down menu link styling */
+#dashboard a,
+#dashboard span {
+  background: none;
+  border: none;
+  color: #c8cacb;
+}
+
+#dashboard .expandable.secondary {
+	background: #243b2b;
+	border: 1px solid #c8cacb;
+}
+
+
+/* Dashboard drop-down menu background reset */
+#dashboard,
+#dashboard.own,
+#dashboard.admin.region {
+  background: 243b2b;
+  border: c8cacb;
+  color: c8cacb;
+}
+
+/* Active/current item styling */
+.actions a:active,
+.current,
+a.current,
+a:link.current,
+#dashboard .current,
+.current a:visited {
+  background: rgba(36, 59, 43, 0.5);
+  box-shadow: none;
+  color: #ffeccf;
+}
+
+/* style navigation buttons hover in module */ 
+div.primary.header.module > ul.navigation.actions > li a:hover{
+	border: 2px outset;
+}
+
+/* style navigation subscribe button hover in module */ 
+div.primary.header.module > ul.navigation.actions > li input[type=submit]:hover{
+	border: 2px outset;
+}
+
+
+/* Drop cap styling for first letter */
+#workskin p:first-child:first-letter,
+li.blurb p:not(.status):first-child:first-letter {
+  color: #ab3740;
+  float: left;
+  font-family: Georgia, serif;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+/* Preface divider
+div.preface {
+  margin: 0;
+  border-bottom: 2px solid #c8cacb;
+}  */
+
+/* Metadata spacing /*
+dl.meta {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+/* Kudos section styling = erwin smith*/
+p.kudos {
+  padding-left: 8.3em;
+  background: url("https://i.ibb.co/qF3L2NZz/erwin-smith-dark.png");
+  background-size: contain; /*100px 112px*/
+  background-repeat: no-repeat;
+  min-height: 112px;
+  color: #c8cacb;
+  background-position-y: center;
+  background-position-x: left;
+}
+
+/* Footer styling = the rumbling*/
+#footer.region {
+  border-top: 5px solid #c8cacb;
+  background: url("https://images7.alphacoders.com/121/thumb-1920-1218892.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+/* Alternate favorites list styling */
+.splash .favorite li:nth-of-type(odd) a {
+  background: #403535;
+}
+
+/* Remove default fieldset styling */
+fieldset,
+fieldset fieldset {
+  background: #243b2b;
+  border: 2px solid #c8cacb;
+  box-shadow: none;
+}
+
+/* Default icon styling = basement key */
+.skins .primary .icon,
+.index .picture .icon {
+  background: url("https://i.ibb.co/TDjynZGd/basement-key.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Hide admin icons */
+.admin .primary .icon {
+  display: none;
+}
+
+/* Remove warning field spacing */
+fieldset.warnings {
+  margin: 0;
+  padding: 0;
+}
+
+/* Homepage header styling */
+.home .header h2 {
+  text-align: left;
+  color: #ffeccf;
+}
+
+/* Admin news background = hange zoe*/
+.news.admin.home {
+  background: url("https://i.ibb.co/gbrn4bJp/hange-zoe.png");
+  background-position-x: right;
+  background-position-y: 400px;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  color: #ffeccf;
+}
+
+/* News module content styling */
+.module.news.group .userstuff {
+  width: 80%;
+  text-align: left;
+  color: ffeccf;
+}
+
+/* About page background = the warriors */
+#main.system.docs.about.region {
+  margin-top: 2em;
+  background: url("https://i.ibb.co/fzG8qmQz/the-warriors-dark.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+
+/* About page spacing */
+#main.system.docs.about.region {
+  padding-bottom: 20%;
+  margin-bottom: 2em;
+}
+
+/* Guest icon styling (replaces default icon with custom image = wall titan) */
+.comment .icon .visitor {
+  background: url("https://i.ibb.co/Xx8GKMG2/wall-titan-dark.png"); /* Custom icon image*/
+  background-size: contain; /* Scale image to fit container */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+/* Media index listbox styling (background + border theme) */
+.media-index .listbox {
+  background: url("https://i.ibb.co/QF4qB4Gt/aot-collage-dark-banner.png"); /* Decorative background */
+  background-size: 30%; /* Smaller repeated image */
+  border: 2px solid #c8cacb; /* border */
+  box-shadow: none; /* Remove AO3 default shadow */
+  color: #ffeccf; /* Text color */
+}
+
+/* Title on front page */
+h3.heading {
+  color: #ffeccf !important
+}
+
+/* Hover link color */
+#main a.tag:hover {
+	Background: #403535;
+}
+
+/* Titles inside media index listbox */
+.media-index .listbox h3.heading a {
+  color: #ffeccf; /* Light text */
+  font-weight: bold;
+}
+
+/* User profile = underground levi, art bybee*/
+.profile-show.dashboard.region dl.meta {
+  border: none;
+  box-shadow: none;
+  background: url("https://i.ibb.co/VpVG8bW6/underground-levi.png"); /* Background image */
+  background-position-x: right; /* Align right */
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #ffeccf;
+}
+
+/* Remove wrapper shadow globally */
+.wrapper {
+  box-shadow: none;
+}
+
+/* General own background override */
+.own, .draft, .draft .wrapper, .unread, .child, .unwrangled, .unreviewed {
+        background: #403535;
+}
+
+/* Work blurbs (fic cards)*/
+li.blurb {
+  border: 1px solid #c8cacb;
+ 
+}
+
+li.blurb {
+   background: #243b2b;
+}
+
+/* set own works to green when on dashboard */
+#main.dashboard > ol > li.work.own {
+  background: #243b2b;
+}
+
+/* sets own works to brown when not on dashboard */
+ol.work.index.group > li.own {
+   background: #403535;
+}
+
+/* Listbox general styling */
+.users-show.dashboard.region .listbox,
+.listbox {
+  background: #344b7b;
+  box-shadow: none;
+  border: 2px solid #c8cacb;
+  color: c8cacb;
+}
+
+/* Listbox headings */
+.users-show.dashboard.region .listbox > .heading,
+.listbox > .heading {
+  color: #ffeccf;
+}
+
+/* List index inside listbox */
+.listbox .index {
+  box-shadow: none;
+  color: ffeccf;
+}
+
+/* Filter settings border  */
+form.verbose legend,
+.verbose form legend {
+  background: #344b7b;
+  border: 2px solid transparent #c8cacb;
+  box-shadow: none;
+}
+
+/* Filter settings*/
+.filters .expander {
+  color: #c8cacb
+}
+
+/* Question text styling */
+.question {
+  color: #ab3740;
+  font-weight: normal;
+}
+
+/* Text color during editing */
+.required, .error, .alert.flash {
+  color: #ffeccf;
+}
+
+/* Text color during editing 2*/
+dd.required {
+  color: #ffeccf !important;
+}
+
+/* Highlighted question labels (during editing) */
+span.question {
+  background: #344b7b;
+  color: #ffeccf;
+  font-weight: normal;
+  border: 2px solid #ffeccf;
+  box-shadow: none;
+}
+
+/* Dashboard border decoration */
+#dashboard.own {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-image: url("https://i.ibb.co/svdxxTgG/Border-1.png") 100 round;
+}
+
+/* Forms inside toggled/dynamic sections */
+.toggled form,
+.dynamic form {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  color: #c8cacb
+}
+
+/* Transparent dynamic container */
+div.dynamic {
+  background: transparent;
+}
+
+/* Collection header styling */
+#header.region.collection h2 {
+  background: url("https://i.ibb.co/QF4qB4Gt/aot-collage-dark-banner.png"); /* Horizontal repeating image */
+  background-repeat: repeat-x;
+  background-size: contain;
+  color: #ffeccf;
+  text-shadow: 0px 0px 8px #000;
+}
+
+/* Statistics Alternating backgrounds & hover highlight */
+#dashboard a:hover,
+.statistics .index li:nth-of-type(2n),
+dl.index dd,
+.reading h4.viewed {
+  background: #403535;
+  color: #c8cacb
+}
+
+/* Stats chart styling */
+#stat_chart svg {
+  filter: sepia(40%) contrast(90%); /* Color filter */
+  border: 10px solid transparent;
+  border-image: url("https://i.ibb.co/vxddkyR3/Border-2.png") 30 round;
+}
+
+/* Spacing for stats actions */
+.stats-index.dashboard.region .actions.module {
+  margin-top: 2em;
+}
+
+/* Statistics panel background image = s4 characters*/
+dl.statistics.meta.group {
+  background: url("https://i.ibb.co/SDkgxkdj/s4-characters.png");
+  background-position-x: right;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-color: #c8cacb;
+}
+
+/* Tag base styling */
+a.tag,
+a.tag:visited,
+a.tag:link {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  border-radius: 0px;
+}
+
+/* Bookmark count link styling */
+.bookmark .count a {
+  border: none;
+  background-color: transparent;
+  color: #c8cacb;
+}
+
+/* Archive Warning tag links */
+li.warnings a,
+dl.meta dd.warning a.tag {
+  background: #ab3740;
+  color: #ffeccf !important;
+  border: 1px solid #ab3740;
+}
+
+/* Archive Warning hover states */
+li.warnings a:hover,
+li.warnings a:visited:hover,
+dl.meta dd.warning a.tag:hover,
+dl.meta dd.warning a.tag:visited:hover {
+  background: #ffeccf !important;
+  border: 1px solid #ab3740;
+  color: #ab3740 !important;
+}
+
+/* Relationship tags (bold) */
+.relationships .tag,
+.work .relationships a.tag,
+dd.relationship.tags a {
+  background: none;
+  color: #ffeccf !important;
+  font-weight: bold;
+  text-shadow: 0px 0px 15px #ffeccf;
+}
+
+/* Relationship hover */
+.relationships .tag:hover {
+  background: #ab3740 !important;
+  color: #ffeccf !important;
+  border: 1px solid #ab3740;
+}
+
+/* Relationship links */
+.relationships .tag,
+.work .relationships a.tag,
+dd.relationship.tags a {
+  background: none;
+  color: #ffeccf !important;
+  font-weight: bold;
+  text-shadow: 0px 0px 15px #ffeccf;
+}
+
+/* Relationship hover links */
+li.relationships a:hover,
+li.relationships a:visited:hover,
+dl.meta dd.relationship a.tag:hover,
+dl.meta dd.relationship a.tag:visited:hover {
+  background: #ab3740 !important;
+  color: #ffeccf !important;
+  border: 1px solid #ab3740;
+}
+
+/* Character tags */
+.characters .tag {
+  background: none;
+  color: #d2c4ae !important;
+}
+
+/* Character hover */
+.characters .tag:hover {
+  background: #ab3740 !important;
+  color: #d2c4ae !important;
+  border: 1px solid #ab3740;
+}
+
+/* Character links */
+li.characters a,
+dl.meta dd.character a.tag {
+  background: none;
+  color: #d2c4ae !important;
+}
+
+/* Character hover links */
+li.characters a:hover,
+li.characters a:visited:hover,
+dl.meta dd.character a.tag:hover,
+dl.meta dd.character a.tag:visited:hover {
+  background: #ab3740 !important;
+  color: #d2c4ae !important;
+  border: 1px solid #ab3740;
+}
+
+/* Freeform tags (teal theme) */
+.freeforms .tag {
+  background: none;
+  color: #d2c4ae !important;
+}
+
+/* Freeform hover */
+.freeforms .tag:hover {
+  background: #ab3740 !important;
+  color: #d2c4ae !important;
+  border: 1px solid #ab3740;
+}
+
+/* Freeform links */
+li.freeforms a,
+dl.meta dd.freeform a.tag {
+  background: none;
+  color: #d2c4ae !important;
+}
+
+/* Freeform hover links */
+li.freeforms a:hover,
+li.freeforms a:visited:hover,
+dl.meta dd.freeform a.tag:hover,
+dl.meta dd.freeform a.tag:visited:hover {
+  background: #ab3740 !important;
+  color: #d2c4ae !important;
+  border: 1px solid #ab3740;
+}
+
+/* Favorite module decoration = the trio */
+.favorite.module.odd {
+  background: url("https://i.ibb.co/KcxN5cdD/eren-mikasa-armin.png");
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+/* Social share buttons */
+.resp-sharing-button--twitter,
+.resp-sharing-button--tumblr {
+  background: #366c89 !important;
+  border: 1px solid #366c89 !important;
+  border-radius: 5px;
+}
+
+.userstuff h3, .faq .categories h3 {
+	border-bottom: 0.25em double #ffeccf;
+}
+
+/* Fix dropdown positioning on mobile WITHOUT breaking left/right alignment */
+@media (max-width: 700px) {
+
+  /* Make sure dropdowns anchor correctly */
+  #header .primary,
+  #greeting {
+    position: relative;
+  }
+
+  /* Reset menus */
+  #header .menu,
+  #greeting .menu {
+    width: auto !important;
+    min-width: 12em;
+  }
+
+  /* LEFT-aligned dropdowns (main nav) */
+  #header .primary .dropdown .menu {
+    left: 0 !important;
+    right: auto !important;
+  }
+
+  /* RIGHT-aligned dropdowns (user/greeting) */
+  #greeting .dropdown .menu {
+    right: 0 !important;
+    left: auto !important;
+  }
+
+}
+
+/* Dashboad News Border */
+@media only screen and (max-width: 62em), handheld {
+    #dashboard, #dashboard.own {
+        border-bottom: 5px solid #c8cacb;
+        border-top: 5px solid #c8cacb;
+        padding: 0.5em 0;
+        border-radius: 0.25em;
+    }
+}
+
+/* Modal pop ups */
+#modal .content, #modal .footer {
+background: #403535
+}
+
+#modal {
+background: #ffeccf
+}
+
+
